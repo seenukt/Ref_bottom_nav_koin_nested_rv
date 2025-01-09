@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-<uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
-        android:allowBackup="true"
         android:name=".App"
+        android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -14,27 +16,35 @@
         android:theme="@style/Theme.RecyclerView"
         tools:targetApi="31">
         <activity
-            android:name=".curved.CurvedBottomNavActivity"
-            android:exported="false" >
+            android:name=".all_component.ComponentActivity"
+            android:exported="true" >
+
         </activity>
         <activity
-            android:name=".bottom_nav_view_pagger.ViewPagerActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".bottom_nav_navigation_with_nave_host.BottomNavNavigationActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".bottomnavigation.TopBarActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".all_nav.AllNavigationActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
+        </activity>
+        <activity
+            android:name=".curved.CurvedBottomNavActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bottom_nav_view_pagger.ViewPagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bottom_nav_navigation_with_nave_host.BottomNavNavigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bottomnavigation.TopBarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
         </activity>
     </application>
 

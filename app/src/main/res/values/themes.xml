@@ -7,4 +7,12 @@
 
     <style name="Theme.RecyclerView" parent="Base.Theme.RecyclerView" />
 
+    <style name="CustomSwitch" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="android:thumb">@drawable/thumb</item>
+        <item name="android:track">@drawable/track</item>
+        <item name="android:thumbTextPadding">0dp</item>
+        <item name="android:switchMinWidth">40dp</item>
+        <item name="android:switchPadding">8dp</item>
+    </style>
+
 </resources>
